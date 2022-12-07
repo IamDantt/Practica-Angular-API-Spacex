@@ -1,7 +1,10 @@
 .header{
-    width: 100%;
+    /* width: 100%; */
     background-color: aliceblue;
-    border-bottom: solid 1px ;
+    border-bottom: solid 1px #f1f1f1;
+    display: flex;
+    padding: 0.75rem;
+    justify-content: space-between;
 }
 
 .menu{
@@ -19,8 +22,14 @@
 }
 
 .menu li{
+    /* list-style: none; */
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
     font-weight: 600;
-    padding: .5rem;
+    padding: .5rem 1rem;
     text-align: center;
+}
+li{
+    list-style: none;
 }
 
