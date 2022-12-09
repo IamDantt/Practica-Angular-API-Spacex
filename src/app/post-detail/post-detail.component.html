@@ -1,0 +1,14 @@
+<!-- DATA: {{respuesta | json}} -->
+<app-header></app-header>
+<div class="wrapper">
+    <div class="block-one">
+        <div>
+            <img class="image-video" [src]="respuesta?.flickr_images[0]" alt="">
+        </div>
+        <div class="wrapper-info">
+            <div class="title">{{respuesta?.name}}</div>
+            <div class="subtitle">{{respuesta?.description}}</div>
+            <div class="date"> First Flight {{respuesta?.first_flight}} </div>
+        </div>
+    </div>
+</div>

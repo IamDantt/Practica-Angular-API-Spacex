@@ -13,7 +13,7 @@ export class SidebarComponent {
 
   ngOnInit(): void{
     this.servicioFavorito.disparadorDeFavoritos.subscribe(data => {
-      console.log('Recibiendo data...' ,data);
+      console.log('Recibiendo data...', data);
       this.listVideos.push(data);
     }) 
   }

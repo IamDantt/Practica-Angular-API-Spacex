@@ -27,3 +27,6 @@
     margin: 0.7rem;
     padding: 0.7rem;
 }
+li{
+    list-style: none;
+}

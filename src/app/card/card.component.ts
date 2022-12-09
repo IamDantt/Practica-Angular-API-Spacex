@@ -9,16 +9,16 @@ import { Component, OnInit, Input } from '@angular/core';
 export class CardComponent implements OnInit {
   @Input() dataEntrante:any;
   public image!:string;
+
   constructor(private servicioFavorito:ServicioDeFavoritosService) { }
   
   ngOnInit(): void{
-    //this.image = 'https://picsum.photos/536/354'
+    // this.image = 'https://picsum.photos/536/354'
     
-
   }
 
   agregarFavorito(){
-    console.log(this.dataEntrante);
+    // console.log(this.dataEntrante);
     this.servicioFavorito.disparadorDeFavoritos.emit({
       data:this.dataEntrante
     });
